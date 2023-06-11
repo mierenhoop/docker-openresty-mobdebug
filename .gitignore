@@ -1,0 +1,3 @@
+/example-plain/logs/access.log
+/example-plain/logs/error.log
+/example-plain/logs/nginx.pid

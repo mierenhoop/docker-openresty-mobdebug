@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: openresty-mobdebug.Dockerfile
+    working_dir: /srv/app
+    command: "/usr/local/openresty/nginx/sbin/nginx -p $PWD -c ./nginx.conf"
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/srv/app
